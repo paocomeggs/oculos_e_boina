@@ -6,25 +6,85 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Óculos e Boina</title>
         <script src="https://kit.fontawesome.com/a11523da75.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="header">
             <div class="contato">
-                <p>Sobre</p>
-                <p>Contato</p>
+                <div class="links">
+                    <p>Sobre</p>
+                    <p>Contato</p>
+                </div>
+                <div class="social_media">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>+55 (41) 9 9999-9999</p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>@lorem_ipsum</p>
+                </div>
             </div>
             <div class="search">
                 <img class="logo">
                 <div class="search_box">
-                    <input type="seach" class="search_input" name="search" placeholder="Busca">
-                    <i class="fa-solid fa-search"></i>
+                    <input type="seach" class="search_input" name="search" placeholder="Busca" id="search">
+                    <i class="fa-solid fa-search" id="search-icon"></i>
                 </div>
                 <button class="conta"><i class="fa-solid fa-user"></i>Minha Conta</button>
                 <button><i class="fa-solid fa-cart-shopping"></i><p id="itens-in-cart">0</p></button>
             </div>
         </div>
         <div class="navbar">
+            <div class="item">
+                <i class="fa-solid fa-coffee"></i>
+                <p>Coffees</p>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-filter"></i>
+                <p>Filters</p>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-bread-slice"></i>
+                <p>Bakery</p>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-blender"></i>
+                <p>Mixes</p>
+            </div>
+        </div>
+        <div class="banner">
+            <i class="fa-solid fa-chevron-left" id="previous-image"></i>
+            <img src="./assets/banner.jpeg" class="banner_image">
+            <div class="pagination">
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+            </div>
+            <i class="fa-solid fa-chevron-right" id="next-image"></i>
+        </div>
+        <button class="service_button">
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>Atendimento</p>
+        </button>
+        <div class="products">
 
+        </div>
+        <div class="footer">
+            
         </div>
     </body>
 </html>
+<script>
+    $('document').ready(function() {
+        $('#search-icon').on('click', function(){
+            alert($('#search').val())
+        }) 
+
+        $('#previous-image').on('click', function(){
+            alert('Imagem anterior')
+        }) 
+
+        $('#next-image').on('click', function(){
+            alert('Próxima imagem')
+        }) 
+    })
+</script>
