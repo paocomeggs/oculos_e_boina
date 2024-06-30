@@ -211,6 +211,8 @@ body p {
             z-index: 0;
             opacity: 0;
             transition: all 0.7s linear;
+
+            object-fit: cover;
         }
 
         .current {
@@ -296,7 +298,7 @@ body p {
     .products {
         width: 100%;
         padding: 50px 0 80px 0;
-        background-color: #838383; 
+        background-color: #282828; 
         display: flex;
         justify-content: center;
 
@@ -306,7 +308,7 @@ body p {
             flex-direction: column;
 
             .title {
-                color: #000;
+                color: #fff;
                 font-size: 34px;
                 font-weight: 600;
 
@@ -327,7 +329,7 @@ body p {
                     height: 460px;
                     width: 320px;
 
-                    background-color: #282828;
+                    border: 1px solid #7C8380;
 
                     border-radius: 0 50px 50px 50px;
                     padding: 10px 10px 20px 10px;
@@ -353,7 +355,7 @@ body p {
                         }
     
                         .product_price {
-                            color: red;
+                            color: #c53c4c;
                             font-size: 32px;
                         }
     
@@ -364,7 +366,7 @@ body p {
                     }
 
                     button {
-                        background-color: #c1c1c1;
+                        background-color: #7C8380;
                         border: none;
                         padding: 12px 24px;
                         border-radius: 30px;
@@ -374,7 +376,7 @@ body p {
                         display: flex;
                         align-items: baseline;
                         gap: 20px;
-                        color: #000;
+                        color: #fff;
                         font-size: 20px;
 
                         transition: 0.3s ease-in-out;
@@ -390,7 +392,7 @@ body p {
 
     .footer {
         width: 100%;
-        height: 400px;
-        background-color: #282828; 
+        height: 300px;
+        background-color: #c53c4c; 
     }
 }
