@@ -17,10 +17,9 @@
                 </div>
                 <div class="social_media">
                     <i class="fa-brands fa-whatsapp"></i>
-                    <p>+55 (41) 9 9999-9999</p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <i class="fa-brands fa-instagram"></i>
-                    <p>@lorem_ipsum</p>
+                    <a href="https://api.whatsapp.com/send?phone=41992157815" target="_blank"><p>+55 (41) 9 9215-7815</p></a>
+                    <i class="fa-brands fa-instagram" style="margin-left: 40px;"></i>
+                    <a href="https://www.instagram.com/ti.budziak/" target="_blank"><p>@ti.budziak</p></a>
                 </div>
             </div>
             <div class="search">
@@ -29,8 +28,8 @@
                     <input type="seach" class="search_input" name="search" placeholder="Busca" id="search">
                     <i class="fa-solid fa-search" id="search-icon"></i>
                 </div>
-                <button class="conta"><i class="fa-solid fa-user"></i>Minha Conta</button>
-                <button><i class="fa-solid fa-cart-shopping"></i><p id="itens-in-cart">0</p></button>
+                <a href="./login.html" id="conta-link"><button class="conta" id="conta"><i class="fa-solid fa-user"></i>Minha Conta</button></a>
+                <button id="cart"><i class="fa-solid fa-cart-shopping"></i><p id="itens-in-cart">0</p></button>
             </div>
         </div>
         <div class="navbar">
@@ -53,20 +52,111 @@
         </div>
         <div class="banner">
             <i class="fa-solid fa-chevron-left" id="previous-image"></i>
-            <img src="./assets/banner.jpeg" class="banner_image">
+
+            <img src="./assets/banner.png" class="banner_image current" id="banner-image-1">
+            <img src="./assets/banner_1.png" class="banner_image" id="banner-image-2">
+            <img src="./assets/banner_2.png" class="banner_image" id="banner-image-3">
+
+            <div class="banner_info">
+                <p class="title" id="banner-title">Neon Genesis Evangelion</p>
+                <p id="banner-description">Ação, Drama, Suspense, Sci-Fi</p>
+                <a href="https://myanimelist.net/anime/30/Shinseiki_Evangelion" target="_blank" id="banner-button"><button>Conheça</button></a>
+            </div>
+
             <div class="pagination">
-                <i class="fa-regular fa-circle"></i>
                 <i class="fa-solid fa-circle"></i>
                 <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
             </div>
+
             <i class="fa-solid fa-chevron-right" id="next-image"></i>
         </div>
-        <button class="service_button">
-            <i class="fa-brands fa-whatsapp"></i>
-            <p>Atendimento</p>
-        </button>
+        <a href="https://api.whatsapp.com/send?phone=41992157815" target="_blank">
+            <button class="service_button">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>Atendimento</p>
+            </button>
+        </a>
         <div class="products">
-
+            <div class="content">
+                <p class="title">Produtos em Destaque</p>
+                <div class="row">
+                    <div class="product">
+                        <img src="./assets/p1.jpg">
+                        <div class="texts">
+                            <p class="product_name">Cowboy Bebop</p>
+                            <p class="product_price">1998</p>
+                            <p class="product_observation">Ação, Sci-Fi</p>
+                        </div>
+                        <button>Ver Mais<i class="fa-solid fa-up-right-from-square"></i></button>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/p2.jpg">
+                        <div class="texts">
+                            <p class="product_name">Cyberpunk: Edgerunners</p>
+                            <p class="product_price">2022</p>
+                            <p class="product_observation">Ação, Sci-Fi</p>
+                        </div>
+                        <button>Ver Mais<i class="fa-solid fa-up-right-from-square"></i></button>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/p3.jpg">
+                        <div class="texts">
+                            <p class="product_name">Bocchi the Rock!</p>
+                            <p class="product_price">2022</p>
+                            <p class="product_observation">Comédia</p>
+                        </div>
+                        <button>Ver Mais<i class="fa-solid fa-up-right-from-square"></i></button>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/p4.jpg">
+                        <div class="texts">
+                            <p class="product_name">Jujutsu Kaisen</p>
+                            <p class="product_price">2020</p>
+                            <p class="product_observation">Ação, Fantasia</p>
+                        </div>
+                        <button>Ver Mais<i class="fa-solid fa-up-right-from-square"></i></button>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 70px;">
+                    <div class="product">
+                        <img src="./assets/p1.jpg">
+                        <div class="texts">
+                            <p class="product_name">Cowboy Bebop</p>
+                            <p class="product_price">1998</p>
+                            <p class="product_observation">Ação, Sci-Fi</p>
+                        </div>
+                        <button>Ver Mais<i class="fa-solid fa-up-right-from-square"></i></button>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/p2.jpg">
+                        <div class="texts">
+                            <p class="product_name">Cyberpunk: Edgerunners</p>
+                            <p class="product_price">2022</p>
+                            <p class="product_observation">Ação, Sci-Fi</p>
+                        </div>
+                        <button>Ver Mais<i class="fa-solid fa-up-right-from-square"></i></button>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/p3.jpg">
+                        <div class="texts">
+                            <p class="product_name">Bocchi the Rock!</p>
+                            <p class="product_price">2022</p>
+                            <p class="product_observation">Comédia</p>
+                        </div>
+                        <button>Ver Mais<i class="fa-solid fa-up-right-from-square"></i></button>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/p4.jpg">
+                        <div class="texts">
+                            <p class="product_name">Jujutsu Kaisen</p>
+                            <p class="product_price">2020</p>
+                            <p class="product_observation">Ação, Fantasia</p>
+                        </div>
+                        <button>Ver Mais<i class="fa-solid fa-up-right-from-square"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer">
             
@@ -74,17 +164,143 @@
     </body>
 </html>
 <script>
+    let currentImage = '';
+
+    let bannerTitle = '';
+    let bannerText = '';
+    let bannerButtonLink = '';
+
+    function check_session() {
+        const cookies = document.cookie.split(" ");
+        const cookieUser = cookies.find((element) => element.includes("User"));
+
+        if (cookieUser) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     $('document').ready(function() {
+        
+        if (check_session()) {
+            $('#conta').html('<i class="fa-solid fa-user"></i>Minha Conta')
+            $('#conta-link').attr('href', './conta.html')
+        } else {
+            $('#conta').html('<i class="fa-solid fa-user"></i>Fazer Login')
+            $('#conta-link').attr('href', './login.html')
+        }
+
         $('#search-icon').on('click', function(){
             alert($('#search').val())
         }) 
 
         $('#previous-image').on('click', function(){
-            alert('Imagem anterior')
+            $('.pagination .fa-solid').removeClass('fa-solid').addClass('fa-regular')
+
+            $('#previous-image').css({'visibility':'hidden','z-index':'-99'})
+            setTimeout(function() {
+                $('#previous-image').css({'visibility':'','z-index':''})
+            }, 700)
+
+            currentImage = $('.current').attr('id') // currentImage = ID da imagem atual
+            $('#' + currentImage).removeClass('current')
+
+            let id = currentImage.split('-')
+
+            if (id[2] === '1') {
+                $('#banner-image-3').addClass('current')
+
+                bannerTitle = 'Your Name'
+                bannerText = 'Drama, Sobrenatural'
+                bannerButtonLink = 'https://myanimelist.net/anime/32281/Kimi_no_Na_wa'
+
+                $('.pagination .fa-circle:nth-child(3)').toggleClass('fa-regular').toggleClass('fa-solid')
+            } else if (id[2] === '2') {
+                $('#banner-image-1').addClass('current')
+
+                bannerTitle = 'Neon Genesis Evangelion'
+                bannerText = 'Ação, Drama, Suspense, Sci-Fi'
+                bannerButtonLink = 'https://myanimelist.net/anime/30/Shinseiki_Evangelion'
+
+                $('.pagination .fa-circle:nth-child(1)').toggleClass('fa-regular').toggleClass('fa-solid')
+            } else if (id[2] === '3') {
+                $('#banner-image-2').addClass('current')
+
+                bannerTitle = 'Weathering with You'
+                bannerText = 'Drama, Fantasia, Romance'
+                bannerButtonLink = 'https://myanimelist.net/anime/38826/Tenki_no_Ko'
+
+                $('.pagination .fa-circle:nth-child(2)').toggleClass('fa-regular').toggleClass('fa-solid')
+            }
+
+            $('.banner_info').css({'opacity':'0'})
+
+            setTimeout(function() {
+                $('.banner_info #banner-title').text(bannerTitle)
+                $('.banner_info #banner-description').text(bannerText)
+                $('.banner_info #banner-button').attr('href', bannerButtonLink)
+
+                $('.banner_info').css({'opacity':'1'})
+            }, 600)
         }) 
 
         $('#next-image').on('click', function(){
-            alert('Próxima imagem')
+            $('.pagination .fa-solid').removeClass('fa-solid').addClass('fa-regular')
+
+            $('#next-image').css({'visibility':'hidden','z-index':'-99'})
+            setTimeout(function() {
+                $('#next-image').css({'visibility':'','z-index':''})
+            }, 700)
+
+            currentImage = $('.current').attr('id') // currentImage = ID da imagem atual
+            $('#' + currentImage).removeClass('current')
+
+            let id = currentImage.split('-')
+
+            if (id[2] === '1') {
+                $('#banner-image-2').addClass('current')
+
+                bannerTitle = 'Weathering with You'
+                bannerText = 'Drama, Fantasia, Romance'
+                bannerButtonLink = 'https://myanimelist.net/anime/38826/Tenki_no_Ko'
+
+                $('.pagination .fa-circle:nth-child(2)').toggleClass('fa-regular').toggleClass('fa-solid')
+            } else if (id[2] === '2') {
+                $('#banner-image-3').addClass('current')
+
+                bannerTitle = 'Your Name'
+                bannerText = 'Drama, Sobrenatural'
+                bannerButtonLink = 'https://myanimelist.net/anime/32281/Kimi_no_Na_wa'
+
+                $('.pagination .fa-circle:nth-child(3)').toggleClass('fa-regular').toggleClass('fa-solid')
+            } else if (id[2] === '3') {
+                $('#banner-image-1').addClass('current')
+
+                bannerTitle = 'Neon Genesis Evangelion'
+                bannerText = 'Ação, Drama, Suspense, Sci-Fi'
+                bannerButtonLink = 'https://myanimelist.net/anime/30/Shinseiki_Evangelion'
+
+                $('.pagination .fa-circle:nth-child(1)').toggleClass('fa-regular').toggleClass('fa-solid')
+            }
+
+            $('.banner_info').css({'opacity':'0'})
+
+            setTimeout(function() {
+                $('.banner_info #banner-title').text(bannerTitle)
+                $('.banner_info #banner-description').text(bannerText)
+                $('.banner_info #banner-button').attr('href', bannerButtonLink)
+
+                $('.banner_info').css({'opacity':'1'})
+            }, 600)
         }) 
+    
+        $('#cart').on('click', function() {
+            if (check_session()) {
+                alert('Usuário Logado')
+            } else {
+                alert('Usuário NÃO Logado')
+            }
+        })
     })
 </script>
